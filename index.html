@@ -3,34 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thefacebook</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Хайрын Веб</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffebf0;
+            color: #d63384;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ff4081;
+        }
+        .flower {
+            display: none;
+            margin-top: 20px;
+            width: 100px;
+        }
+        button {
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <div class="header">Thefacebook</div>
     <div class="container">
-        <div class="left-sidebar">
-            <div class="nav">
-                <a href="index.html">Нүүр хуудас</a>
-                <a href="page2.html">Миний гэр бүл</a>
-                <a href="page3.html">Холбоо барих</a>
-            </div>
-        </div>
-        <div class="main-content">
-            <div class="profile-header">
-                <img src="nice.jpg" alt="Profile Picture">
-                <h2>Tengis Steve</h2>
-            </div>
-            <div class="info">
-                <p><strong>Сургууль:</strong>NUM</p>
-                <p><strong>Статус:</strong> Student</p>
-                <p><strong>Төрсөн өдөр:</strong> 2005-12-24</p>
-                <p><strong>Хаяг:</strong> Хороолол ганг2</p>
-                <p><strong>Email:</strong> TengisTengis736@gmail.com</p>
-                <p><strong>Хобби:</strong> Бүгдэд дуртай</p>
-            </div>
-        </div>
+        <h1>Хөөрхөн Номуунаа</h1>
+        <p>Номуунаад зориулав ❤️</p>
+        <button onclick="showFlower()">Сюрприз</button>
+        <br>
+        <img id="flower" class="flower" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Peace_rose.jpg/800px-Peace_rose.jpg" alt="Цэцэг">
     </div>
-    <div class="footer">TheFacebook</div>
+    <script>
+        function showFlower() {
+            document.getElementById("flower").style.display = "block";
+        }
+    </script>
 </body>
 </html>
