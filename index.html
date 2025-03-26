@@ -3,54 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Хайрын Веб</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #ffebf0;
-            color: #d63384;
-        }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #ff4081;
-        }
-        .flower {
-            display: none;
-            margin-top: 20px;
-            padding: 10px;
-            width: 280px;
-        }
-        button {
-            background-color: #ff4081;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            margin-top: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+    <title>Тэнгисийн CV</title>
+    <link rel="stylesheet" href="cv3.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Хөөрхөн Номуунаа</h1>
-        <p>Номуунаад зориулав ❤️</p>
-        <button onclick="showFlower()">Сюрприз</button>
-        <br>
-        <img id="flower" class="flower" src="rose.jpg" alt="Цэцэг">
+    <div class="cv-container">
+        <div class="sidebar">
+            <img src="tengis.jpg" alt="Таны зураг" class="profile-img">
+            <h2>Тэнгис</h2>
+            <p class="profession"><strong>Мэргэжил:</strong> Мэдээллийн систем</p>
+            <div class="contact">
+                <p><a href="mailto:tengistengis736@gmail.com">tengistengis736@gmail.com</a></p>
+                <p>Утас: 8656-2424</p>
+                <p><a href="http://yourwebsite.com" target="_blank">E-shop.mn</a></p>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Ур чадвар</h3>
+                <ul>
+                    <li>Программчлал</li>
+                    <li>Мэдээллийн системүүд</li>
+                    <li>Проект удирдлага</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Хэлний мэдлэг</h3>
+                <ul>
+                    <li>Монгол хэл - Төрөлх</li>
+                    <li>Англи хэл - Дунд түвшин</li>
+                    <li>Солонгос хэл - Анхан түвшин</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Хобби</h3>
+                <ul>
+                    <li>Зураг авах</li>
+                    <li>Эдит хийх</li>
+                    <li>Хөгжим сонсох</li>
+                    <li>Алхах</li>
+                    <li>Усанд сэлэх</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="section">
+                <h2>Ажлын туршлага</h2>
+                <p><strong>Cup Chicken</strong> (2023 он)</p>
+                <p>Cup Chicken нэртэй халх канаан ХХК-д Тэнгис миний бие 3 сарын хугацаанд ажилсан.  
+                Ажиллах хугацаандаа Зөөгч, Касс, Шарагч гэх 3 төрлийн местен дээр ээлжилж ажилладаг байсан.</p>
+                
+                <p><strong>E-shop</strong> (2025 он)</p>
+                <p>Энэхүү дэлгүүр маань одоо 3 сарын настай миний жижиг бизнес.  
+                6 сард вэбсайттай болж, захиалга хүргэлтийг автоматжуулах систем нэвтрүүлэх зорилготой байгаа.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Боловсрол</h2>
+                <p><strong>МУИС</strong> (2023-одоо)</p>
+                <p><strong>Олонлог Төв Сургууль</strong> (2021-2023)</p>
+                <p><strong>Гурван Тамир Сургууль</strong> (2014-2021)</p>
+                <p><strong>78-р Сургууль</strong> (2011-2013)</p>
+            </div>
+
+            <div class="section">
+                <h2>Ур чадвар</h2>
+                <p>Writing</p>
+                <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                <p>Listening</p>
+                <div class="progress-bar"><div class="progress" style="width: 100%;"></div></div>
+                <p>Vision</p>
+                <div class="progress-bar"><div class="progress" style="width: 100%;"></div></div>
+                <p>Public Speaking</p>
+                <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+            </div>
+
+            <div class="section">
+                <h2>Сертификат</h2>
+                <ul>
+                    <li>Чингэлтэй Дүүргийн физикийн олимпиад - Тусгай байр (2024)</li>
+                    <li>Чингэлтэй Дүүргийн физикийн олимпиад - 3-р байр (2023)</li>
+                    <li>ПИ тооны уралдаан - 2-р зэрэг (2024)</li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <script>
-        function showFlower() {
-            document.getElementById("flower").style.display = "block";
-        }
-    </script>
 </body>
 </html>
